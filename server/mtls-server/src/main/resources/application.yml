@@ -1,0 +1,17 @@
+server:
+  port: 8432
+  ssl:
+    enabled: true
+    client-auth: need
+    key-store: classpath:identity.jks
+    key-store-password: ***
+    key-alias: client
+    key-store-type: JKS
+    key-store-provider: SUN
+    trust-store: classpath:truststore.jks
+    trust-store-password: ***
+    trust-store-type: JKS
+
+logging:
+  level:
+    web: debug

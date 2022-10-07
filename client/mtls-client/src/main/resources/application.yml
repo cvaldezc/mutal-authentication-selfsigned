@@ -1,0 +1,13 @@
+server:
+  base-url: 'https://localhost:8432'
+  endpoint: /certificate-verify
+  ssl:
+    trust-store: classpath:truststore.jks
+    trust-store-password: ***
+    key-store: classpath:identity.jks
+    key-store-password: ***
+    key-alias: client
+
+logging:
+  level:
+    web: debug
